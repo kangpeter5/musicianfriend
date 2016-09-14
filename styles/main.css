@@ -1,0 +1,291 @@
+*{
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.content, .sidebar{
+	display: inline-block;
+}
+.content{
+    width: 780px;
+    margin: 5px 5px 5px 0;
+    padding: 5px 5px 5px 0;
+}
+/* Navbar */
+.navs{
+    position: relative;
+    background-color: #d9d9d9;
+    width: 989px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.tab li {
+    float: left;
+    width: 14.28%;
+    font-size: 19px;
+}
+ul.tab li a, .dropbtn {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+ul.tab li a:hover, .dropdown:hover .dropbtn {
+    background-color: #595959;
+}
+ul.tab li {
+    display: inline-block;
+}
+.dropdown-content {
+    padding-left: 5px;
+    padding-bottom: 0;
+    padding-top: 0;
+    display: none;
+    position: absolute;
+    background-color: #595959;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a{
+    font-size: 80%;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: black;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}/* END Navbar */
+
+/* Main Image */
+.main-graphic{
+    background: url("../images/main.jpg");
+    width: 100%;
+    height: 300px;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+div.callout{
+    position: relative;
+    top: 15%;
+    left: 35%;
+    width: 200px;
+}
+.callout h4{
+    color: white;
+    background-color: #595959;
+    text-align: center;
+}
+.callout p{
+    padding: 5px;
+    background-color: #d9d9d9;
+}/* END Main Image */
+
+/* bottom content */
+.sale-signup {
+    width: 100%;
+    display: inline-block;
+}
+.tab-menu{
+    padding: 0;
+    margin-top: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+.tab-menu li {
+    margin: 0;
+    display: inline;
+    list-style: none;
+    float: left;
+}
+.tab-menu li a {
+    padding: 10px 60px;
+    display: block;
+    background-color: #d9d9d9;
+    color: black;
+    text-decoration: none;
+    border-top: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.tab-menu li a:hover {
+    background: white;
+    font-weight: 600;
+}
+.tab-menu li.active a, .tab-menu li.active a:hover {
+    background: white;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+}
+.sale-signup-content {
+    position: relative;
+    padding: 25px;
+    overflow: auto;
+    z-index: 1;
+    clear: both;
+    border: 1px solid grey;
+    top: -1px;
+    height: 250px;
+    margin: 0px;
+    display: none;
+    /*background-color: #f5f5f5;*/
+}
+.sale-signup-content h2{
+    color: grey;
+}
+.sale-signup-content div{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.sale-signup-content img{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    min-width: 190px;
+}
+.sale-signup-content div h3{
+    margin: 0;
+    width: 150px;
+}
+.previous-price{
+    color:red;
+    text-decoration: line-through;
+}
+.sale-signup-content.active {
+    display:block;
+}
+/* new-arrival ajax tab */
+#new-arrivals h2{
+    color: grey;
+}
+div.new-arrival-border{
+    margin-top: 10px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid grey;
+    display: inline-block;
+}
+.new-arrival-border img{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    min-width: 190px;
+}
+.new-arrival-border div{
+    width: 450px;
+}
+/* END new-arrivals ajax tab */
+/* Sign Up Form */
+form{
+    margin-top: 10px;
+}
+form label{
+    font-size: 15px;
+    font-weight: 300;
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+form .form-block{
+    width: 100%;
+    margin: 5px;
+    padding: 0;
+}
+form input{
+    width: 450px;
+}
+form .com-input{
+    width: 456px;
+}
+form .bday-input select{
+    margin-right: 10px;
+    width: 221px;
+}
+.form-button{
+    width: 100px;
+}
+.form-button{
+    border: 1px solid black;
+    background-color: #d9d9d9;
+}
+.form-button:hover{
+    color: white;
+    background-color: grey;
+}
+/* END Sign Up Form*/
+/* END bottom tab menu */
+
+/* Sidebar */
+.sidebar{
+    vertical-align: top;
+    margin: 10px;
+	background-color: #d9d9d9;
+	width: 185px;
+    height: 675px;  
+}
+.sidebar-menu{
+    margin-top: 10px;
+    padding-top: 10px;  
+    width: 180px;
+}
+button.accordion {
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 1px;
+    margin-bottom: 1px; 
+    padding: 10px;
+    width: 140px;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: white;
+}
+button.accordion.active, button.accordion:hover {
+    background-color: #595959;
+    margin-top: 0px;
+    margin-bottom: 0px; 
+}
+div.panel { 
+    background-color: #595959; 
+    width: 140px;
+    max-height: 0;
+    margin-left: 20px;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+}
+div.panel ul{
+    margin-top: 5px;
+    padding: 0;
+    list-style-type: none;
+}
+div.panel ul li a{
+    margin-left: 20px;
+    text-align: left;
+}
+div.panel.show {
+    min-height: 50px;
+}/* END of sidebar */
+
+#footer{
+    margin: 0;
+    padding: 5px 10px;
+    border: 1px solid black;
+    background-color: #d9d9d9;
+    width: 965px;
+}

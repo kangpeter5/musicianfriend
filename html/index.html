@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Guitar Center</title>
+	<script type="text/javascript" src="../js/jquery-1.12.4.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../styles/main.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="navs">
+		<ul class="tab">
+			<li class="dropdown">
+				<a href="#" class="dropbtn">Guitar</a>
+				<div class="dropdown-content">
+					<a href="#electric">Electric Guitars</a>
+					<a href="#acoustic">Acoustic Guitars</a>
+					<a href="#acousticalectric">Acoustic-Electric Guitars</a>
+					<a href="#classical">Classical Guitars</a>
+				</div>
+			</li>
+			<li><a href="#">Bass</a></li>
+			<li><a href="#">Drums</a></li>
+			<li><a href="#">Keyboards</a></li>
+			<li><a href="#">Dj &amp; Lighting</a></li>
+			<li><a href="#">Used Gear</a></li>
+			<li><a href="#">Clearance</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		<div class="main-graphic">
+			<div class="callout">
+				<h4>New Guitars</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>	
+			</div>	
+		</div>
+		<div class="sale-signup">
+			<ul class="tab-menu">
+				<li><a href="#sale">On Sale</a></li>
+				<li><a href="#new-arrivals" id="new-arrivals">New Arrivals</a></li>
+				<li><a href="#signup">Sign Up</a></li>
+			</ul>
+			<div class="sale-signup-content" id="sale">
+				<h2>Smoking Deals</h2>
+				<div>
+					<img src="../images/product1.jpg" alt="..." />
+					<h3>The Name of this Instrument</h3>
+					<p class="previous-price">Was: $500.00</p>
+					<p>Now: $295.00</p>	
+				</div>
+				<div>
+					<img src="../images/product2.jpg" alt="..." />
+					<h3>The Name of this Instrument</h3>
+					<p class="previous-price">Was: $500.00</p>
+					<p>Now: $295.00</p>
+				</div>
+				<div>
+					<img src="../images/product3.jpg" alt="..." />
+					<h3>The Name of this Instrument</h3>
+					<p class="previous-price">Was: $500.00</p>
+					<p>Now: $295.00</p>
+				</div>
+			</div>
+			<!-- AJAX REQUEST for #new-arrivals -->
+			<div class="sale-signup-content" id='new-results'></div>
+
+			<div class="sale-signup-content" id="signup">
+				<h2>New Account</h2>
+				<form action="">
+					<div class="form-block">
+						<label>First Name: </label>
+						<input type="text" name="firstname" />	
+					</div>
+					<div class="form-block">
+						<label>Last Name: </label>
+						<input type="text" name="lastname" />
+					</div>
+					<div class="form-block">
+						<label>Email Address: </label>
+						<input type="text" name="email" />
+					</div>
+					<div class="form-block">
+						<label>Password: </label>
+						<input type="password" name="password" />
+					</div>
+					<div class="form-block">
+						<label>Communication Method: </label>
+						<select class="com-input">
+							<option>Email</option>
+							<option>Phone</option>
+						</select>
+					</div>
+					<div class="form-block bday-input">
+						<label>Birthday: </label>
+						<select name="DOBMonth">
+							<option> - Month - </option>
+							<option value="January">January</option>
+							<option value="Febuary">Febuary</option>
+							<option value="March">March</option>
+							<option value="April">April</option>
+							<option value="May">May</option>
+							<option value="June">June</option>
+							<option value="July">July</option>
+							<option value="August">August</option>
+							<option value="September">September</option>
+							<option value="October">October</option>
+							<option value="November">November</option>
+							<option value="December">December</option>
+						</select>
+
+						<select name="DOBDay">
+							<option> - Day - </option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+					</div>
+					<div class="form-block">
+						<label></label>
+						<input class="form-button" type="submit" value="Create Account" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="sidebar">
+		<div class="sidebar-menu">
+			<button class="accordion">Link 1</button>
+			<div class="panel">
+				<ul>
+					<li><a href="#">sublink</a></li>
+					<li><a href="#">sublink</a></li>
+				</ul>
+			</div>
+
+			<button class="accordion">Link 2</button>
+			<div class="panel">
+				<ul>
+					<li><a href="#">sublink</a></li>
+					<li><a href="#">sublink</a></li>
+				</ul>
+			</div>
+
+			<button class="accordion">Link 3</button>
+			<div class="panel">
+				<ul>
+					<li><a href="#">sublink</a></li>
+					<li><a href="#">sublink</a></li>
+				</ul>
+			</div>
+			<button class="accordion">Link 4</button>
+			<div class="panel">
+				<ul>
+					<li><a href="#">sublink</a></li>
+					<li><a href="#">sublink</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<p>&copy; 2009 Musician's Friend, Inc.</p>
+	</div>
+</div>
+<script type="text/javascript" src="../js/main.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#new-arrivals").click(function(){			
+			$.get("../partials/newarrivals.html #new-results", function(res){
+				$("#new-results").load(res);
+			});
+		});
+	});
+	$(function() {
+		$(".sale-signup").get_tabs();
+	});
+</script>
+</body>
+</html>
